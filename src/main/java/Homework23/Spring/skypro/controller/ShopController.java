@@ -1,15 +1,12 @@
 package Homework23.Spring.skypro.controller;
 
-import Homework23.Spring.skypro.service.Basket;
 import Homework23.Spring.skypro.service.ShopSevice;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Set;
 
 @RestController
 @RequestMapping("/store/order")
@@ -28,7 +25,7 @@ public class ShopController {
 
 
     @GetMapping("/get")
-    public Set<Integer> get() {
+    public List<Integer> get() {
         return sevice.get();
     }
 

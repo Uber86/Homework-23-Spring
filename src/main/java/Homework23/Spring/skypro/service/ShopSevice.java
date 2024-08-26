@@ -18,7 +18,7 @@ public class ShopSevice {
         basket.add(id);
     }
 
-    public Set<Integer> get() {
+    public List<Integer> get() {
         return basket.get();
     }
 
